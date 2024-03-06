@@ -55,8 +55,8 @@ async def chk_usr(_, message: Message):
         msg += """
 **Ⰶ ᴄʜᴀɴɢᴇs ғɪʀsᴛ ɴᴀᴍᴇ Ⰶ**
 
-**๏ ᴡɪᴛʜᴏᴜᴛ ᴄʜᴀɴɢᴇ ғʀɪsᴛ ɴᴀᴍᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ ᴄʜᴀɴɢᴇ ғʀɪsᴛ ɴsᴍᴇ** ➛ {aft}
+**๏ ᴡɪᴛʜᴏᴜᴛ ᴄʜᴀɴɢᴇ ғɪʀsᴛ ɴᴀᴍᴇ** ➛ {bef}
+**๏ ᴀғᴛᴇʀ ᴄʜᴀɴɢᴇ ғɪʀsᴛ ɴsᴍᴇ** ➛ {aft}
 ➖➖➖➖➖➖➖➖➖➖➖➖\n
 """.format(
             bef=first_name, aft=message.from_user.first_name
@@ -86,7 +86,7 @@ async def chk_usr(_, message: Message):
             message.from_user.last_name,
         )
     if msg != "":
-        await message.reply_photo("https://telegra.ph/file/ded86839c47bdd843109b.jpg", caption=msg)
+        await message.reply_photo("https://graph.org/file/4519b58e9b01cd90fefe1.jpg", caption=msg)
 
 
 @app.on_message(filters.group & filters.command("imposter") & ~filters.bot & ~filters.via_bot)
