@@ -36,15 +36,15 @@ async def member_has_joined(client: bot, member: ChatMemberUpdated):
         ])
 
         caption = (
-            f"🎉 ᴡᴇʟᴄᴏᴍᴇ {user.mention}! 🌟\n\n"
-            f"✨ ɪᴛ's ᴀ ᴘʟᴇᴀsᴜʀᴇ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴡɪᴛʜ ᴜs! "
+            f" ᴡᴇʟᴄᴏᴍᴇ {user.mention}! \n\n"
+            f" ɪᴛ's ᴀ ᴘʟᴇᴀsᴜʀᴇ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴡɪᴛʜ ᴜs! "
             f"ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sʜᴀʀᴇ ᴜʀ ᴛʜᴏᴜɢʜᴛs ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ᴠɪʙᴇs.\n\n"
-            f"📅 ᴊᴏɪɴ ᴅᴀᴛᴇ : {get_formatted_datetime()}"
+            f" ᴊᴏɪɴ ᴅᴀᴛᴇ : {get_formatted_datetime()}"
         )
         
         await client.send_photo(
             chat_id=member.chat.id,
-            photo="https://graph.org/file/6f913de8bd1fc44d2d7f2.jpg",
+            photo="https://telegra.ph/file/d75060bfdac8faa93c09c.jpg",
             caption=caption,
             reply_markup=user_button,
         )
@@ -78,14 +78,14 @@ async def member_has_left(client: bot, member: ChatMemberUpdated):
         ])
 
         caption = (
-            f"😢 ɢᴏᴏᴅʙʏᴇ {user.mention}!** 😔\n\n"
-            f"🌈 ᴡᴇ'ʟʟ ᴍɪss ʏᴏᴜ! ɪᴅ ʏᴏᴜ ᴇᴠᴇʀ ᴅᴇᴄɪᴅᴇ ᴛᴏ ʀᴇᴛᴜʀɴ, ᴏᴜʀ ᴅᴏᴏʀs ᴀʀᴇ ᴀʟᴡᴀʏs ᴏᴘᴇɴ.\n\n"
-            f"📅 ʟᴇғᴛ ᴅᴀᴛᴇ : {get_formatted_datetime()}"
+            f" ɢᴏᴏᴅʙʏᴇ {user.mention}!** \n\n"
+            f" ᴡᴇ'ʟʟ ᴍɪss ʏᴏᴜ! ɪᴅ ʏᴏᴜ ᴇᴠᴇʀ ᴅᴇᴄɪᴅᴇ ᴛᴏ ʀᴇᴛᴜʀɴ, ᴏᴜʀ ᴅᴏᴏʀs ᴀʀᴇ ᴀʟᴡᴀʏs ᴏᴘᴇɴ.\n\n"
+            f" ʟᴇғᴛ ᴅᴀᴛᴇ : {get_formatted_datetime()}"
         )
 
         await client.send_animation(
             chat_id=member.chat.id,
-            animation="https://telegra.ph/file/d28047520fad932521368.mp4",
+            animation="https://telegra.ph/file/0084ed4500d3ca978edbd.mp4",
             caption=caption,
             reply_markup=user_button,
         )
